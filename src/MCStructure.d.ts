@@ -1,16 +1,16 @@
 import { BooleanTag, ByteTag, ShortTag, IntTag, LongTag, FloatTag, StringTag } from "nbtify";
 
-// Use of unknown types are simply because I didn't dive deeper into finding the real types for that given feature.
+// Use of empty types are simply because I didn't dive deeper into finding the real types for that given feature.
 
 export interface MCStructure {
   format_version: IntTag;
   size: [IntTag, IntTag, IntTag];
   structure: {
-    block_indices: [IntTag[],IntTag[]];
+    block_indices: IntTag[][];
     entities: Entity[];
     palette: {
       default: {
-        block_palette: BlockState[];
+        block_palette: BlockPalette[];
         block_position_data: BlockPosition;
       };
     };
@@ -72,7 +72,7 @@ export interface Entity {
   Strength: IntTag;
   StrengthMax: IntTag;
   Surface: BooleanTag;
-  Tags: [];
+  Tags: StringTag[];
   TargetID: LongTag;
   TradeExperience: IntTag;
   TradeTier: IntTag;
@@ -82,7 +82,7 @@ export interface Entity {
   boundY: IntTag;
   boundZ: IntTag;
   canPickupItems: BooleanTag;
-  definitions: [StringTag, StringTag, StringTag];
+  definitions: StringTag[];
   hasBoundOrigin: BooleanTag;
   hasSetCanPickupItems: BooleanTag;
   identifier: StringTag;
@@ -106,10 +106,12 @@ export interface Attribute {
   Name: StringTag;
 }
 
-export interface BlockState {
+export interface BlockPalette {
   name: StringTag;
-  states: Record<string,unknown>;
+  states: BlockState;
   version: IntTag;
 }
 
-export interface BlockPosition extends Record<string,unknown> {}
+export interface BlockState {}
+
+export interface BlockPosition {}

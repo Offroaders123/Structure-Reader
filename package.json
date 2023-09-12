@@ -2,11 +2,11 @@
   "name": "structure-reader",
   "private": true,
   "type": "module",
-  "devDependencies": {
-    "@types/node": "^20.2.6",
-    "tsx": "^3.12.7"
-  },
   "dependencies": {
-    "nbtify": "^1.44.1"
+    "nbtify": "^1.69.420"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "tsx": "^3.12.8"
   }
 }

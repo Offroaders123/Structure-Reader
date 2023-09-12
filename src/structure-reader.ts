@@ -19,9 +19,6 @@ const [structure,structureGzip,structureDeflate] = await Promise.all([
   NBT.read<MCStructure>(dataDeflate)
 ]);
 
-// const definition = NBT.definition(structure,{ name: "MCStructure" });
-// console.log(definition);
-
 console.log(structure,"\n");
 console.log(structureGzip,"\n");
 console.log(structureDeflate,"\n");
