@@ -2,11 +2,15 @@
   "name": "structure-reader",
   "private": true,
   "type": "module",
+  "scripts": {
+    "dev": "tsc --watch"
+  },
   "dependencies": {
     "nbtify": "^1.85.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.3",
-    "tsx": "^4.7.0"
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
   }
 }

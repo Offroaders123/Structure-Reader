@@ -27,10 +27,10 @@ I recently found these two packages as well, definitely going to be helpful for 
 ## Usage
 
 ```sh
-$ npx tsx ./src/structure-reader.ts
+$ npx tsx ./test
 
 # - or this to watch for changes,
 # - if you want to experiment with the code
 
-$ npx tsx --watch ./src/structure-reader.ts
+$ npx tsx --watch ./test
 ```

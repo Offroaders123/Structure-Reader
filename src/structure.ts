@@ -1,5 +1,12 @@
 import type { BooleanTag, IntTag, StringTag } from "nbtify";
 
+export function createBlockMap(data: Structure): BlockState[] {
+  return data.structure.block_indices[0]
+    .map(index =>
+      data.structure.palette.default.block_palette[index.valueOf()]!
+    );
+}
+
 // Use of empty types are simply because I didn't dive deeper into finding the real types for that given feature.
 // This will be handled in the future by Region-Types
 
