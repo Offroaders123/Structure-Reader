@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { parse } from "nbtify";
 
-import type { Structure, BlockState } from "./MCStructure.d.ts";
+import type { Structure, BlockState } from "./structure.js";
 
 const demo = new URL("../test/twofourthree.snbt",import.meta.url);
 
