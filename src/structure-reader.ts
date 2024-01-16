@@ -1,26 +1,18 @@
 import { readFile } from "node:fs/promises";
-import * as NBT from "nbtify";
+import { parse } from "nbtify";
 
-import type { MCStructure } from "./MCStructure.d.ts";
+import type { Structure, BlockState } from "./MCStructure.d.ts";
 
-const STRUCTURE = new URL("../test/uncompressed.mcstructure",import.meta.url);
-const STRUCTURE_GZIP = new URL("../test/gzip.mcstructure",import.meta.url);
-const STRUCTURE_DEFLATE = new URL("../test/zlib.mcstructure",import.meta.url);
+const demo = new URL("../test/twofourthree.snbt",import.meta.url);
 
-const [data,dataGzip,dataDeflate] = await Promise.all([
-  readFile(STRUCTURE),
-  readFile(STRUCTURE_GZIP),
-  readFile(STRUCTURE_DEFLATE)
-]);
+const buffer = await readFile(demo,"utf-8");
+console.log(buffer);
 
-const [structure,structureGzip,structureDeflate] = await Promise.all([
-  NBT.read<MCStructure>(data),
-  NBT.read<MCStructure>(dataGzip),
-  NBT.read<MCStructure>(dataDeflate)
-]);
+const data = parse<Structure>(buffer);
+console.log(data);
 
-console.log(structure,"\n");
-console.log(structureGzip,"\n");
-console.log(structureDeflate,"\n");
-
-console.log(structure.data.structure.entities.map(entity => entity.identifier));
+const blockMap: BlockState[] = data.structure.block_indices[0]
+  .map(index =>
+    data.structure.palette.default.block_palette[index.valueOf()]!
+  );
+console.log(blockMap);

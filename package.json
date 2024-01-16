@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "nbtify": "^1.75.0"
+    "nbtify": "^1.85.0"
   },
   "devDependencies": {
-    "@types/node": "^20.6.1",
-    "tsx": "^3.12.10"
+    "@types/node": "^20.11.3",
+    "tsx": "^4.7.0"
   }
 }

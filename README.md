@@ -6,7 +6,7 @@ While looking into the types to document for Java's NBT Chunk Format in my [Regi
 
 This was a nice little thing to set up to both learn more about the Structure Block format, and also show off some different ways as to how you can make use of NBTify's API features!
 
-[Structure file format - Minecraft Wiki](https://minecraft.fandom.com/wiki/Structure_Block_file_format) (Java)
+[Structure file format - Minecraft Wiki](https://minecraft.wiki/w/Structure_file) (Java)
 
 [Bedrock mcstructure file format - gist.github.com](https://gist.github.com/tryashtar/87ad9654305e5df686acab05cc4b6205)
 
@@ -17,6 +17,12 @@ This was a nice little thing to set up to both learn more about the Structure Bl
 [MCBE Essentials](https://mcbe-essentials.github.io/structure-editor/) (A very cool find!)
 
 [MCBE Essentials - github.com](https://github.com/MCBE-Essentials/mcbe-essentials.github.io)
+
+I recently found these two packages as well, definitely going to be helpful for this project, and Region-Types in particular.
+
+[@minecraft/vanilla-data - npm](https://www.npmjs.com/package/@minecraft/vanilla-data)
+
+[bc-minecraft-bedrock-vanilla-data - npm](https://www.npmjs.com/package/bc-minecraft-bedrock-vanilla-data)
 
 ## Usage
 

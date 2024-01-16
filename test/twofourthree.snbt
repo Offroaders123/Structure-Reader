@@ -1,0 +1,163 @@
+{
+  format_version: 1,
+  size: [2, 4, 3],
+  structure: {
+    block_indices: [
+      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    ],
+    entities: [],
+    palette: {
+      default: {
+        block_palette: [
+          {
+            name: "minecraft:lapis_block",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:cracked_nether_bricks",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:brick_block",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:purpur_block",
+            states: {
+              chisel_type: "lines",
+              pillar_axis: "y"
+            },
+            version: 18100737
+          },
+          {
+            name: "minecraft:clay",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:gold_block",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:chiseled_deepslate",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:honeycomb_block",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:bone_block",
+            states: {
+              deprecated: 0,
+              pillar_axis: "y"
+            },
+            version: 18100737
+          },
+          {
+            name: "minecraft:raw_gold_block",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:bookshelf",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:crafting_table",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:quartz_block",
+            states: {
+              chisel_type: "default",
+              pillar_axis: "y"
+            },
+            version: 18100737
+          },
+          {
+            name: "minecraft:prismarine",
+            states: {
+              prismarine_block_type: "dark"
+            },
+            version: 18100737
+          },
+          {
+            name: "minecraft:cobblestone",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:hay_block",
+            states: {
+              deprecated: 0,
+              pillar_axis: "y"
+            },
+            version: 18100737
+          },
+          {
+            name: "minecraft:honey_block",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:emerald_block",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:scaffolding",
+            states: {
+              stability: 0,
+              stability_check: 1b
+            },
+            version: 18100737
+          },
+          {
+            name: "minecraft:cobblestone_wall",
+            states: {
+              wall_block_type: "granite",
+              wall_connection_type_east: "none",
+              wall_connection_type_north: "none",
+              wall_connection_type_south: "tall",
+              wall_connection_type_west: "tall",
+              wall_post_bit: 1b
+            },
+            version: 18100737
+          },
+          {
+            name: "minecraft:iron_block",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:raw_copper_block",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:raw_iron_block",
+            states: {},
+            version: 18100737
+          },
+          {
+            name: "minecraft:dried_kelp_block",
+            states: {},
+            version: 18100737
+          }
+        ],
+        block_position_data: {}
+      }
+    }
+  },
+  structure_world_origin: [16, -60, 17]
+}
